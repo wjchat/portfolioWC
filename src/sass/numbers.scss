@@ -1,0 +1,63 @@
+@import "global";
+
+li{
+    list-style: none;
+    padding-left: 1vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &.img{
+        width: 9vw;
+    }
+    img{
+        width: auto;
+        height: 14vh;
+        display: flex;
+        justify-content: center;
+        transform: rotate(180deg);
+        &.backUp{
+            transform: rotate(0deg);
+            pointer-events: all;
+        }
+    }
+}
+
+.numbersContainer{
+    @include mediumText;
+    height: 80vh;
+    position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+    .list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+//        border: solid white 1px;
+        width: fit-content;
+        width: 13vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .overLayWindow{
+        height: 0;
+        width: 13vw;
+        overflow: hidden;
+        background-color: $white;
+        transform: translateY(0);
+        .listContainer{
+            color: $black;
+            transform: translateY(0);
+            position: absolute;
+            height: 80vh;
+            width: 100%;
+//            pointer-events: none;
+        }
+    }
+}
