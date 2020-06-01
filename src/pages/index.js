@@ -2,6 +2,7 @@ import React, {useState} from "react"
 
 import Cursor from "../components/cursor.jsx"
 import SmoothScroll from "../components/smoothScroll.jsx"
+import Mobile from "../components/mobile.jsx"
 
 import SEO from '../components/seo.js';
 import "../assets/css/default.css"
@@ -33,13 +34,18 @@ const IndexPage = () => {
         <meta http-equiv="Expires" content="0" />
       </head>
         <SEO title = "Will Chatterson" />
-          <SmoothScroll 
-          updateShrink = {(bool) => updateShrink(bool)}
-          updateMouseColor = {(newColor)=>updateMouseColor(newColor)}>
-           </SmoothScroll>
-           <Cursor 
-           shrinkMouse = {shrinkMouse}
-           mouseColor = {mouseColor} />
+           <div className = "desktopView">
+              <SmoothScroll 
+              updateShrink = {(bool) => updateShrink(bool)}
+              updateMouseColor = {(newColor)=>updateMouseColor(newColor)}>
+               </SmoothScroll>
+               <Cursor 
+               shrinkMouse = {shrinkMouse}
+               mouseColor = {mouseColor} />
+           </div>
+           <div className = "mobileView">
+               <Mobile />
+           </div>
     </div>)
 }
 
