@@ -3,6 +3,7 @@ import "../sass/mobile.scss"
 import MobileItem from "./mobileItem.jsx"
 import arrow from "../assets/images/mobileArrow.svg"
 import MobileNumbers from "./mobileNumbers.jsx"
+import Footer from "./footer.jsx"
 
 import gsap from "gsap"
 
@@ -22,7 +23,7 @@ const Mobile = props =>{
         </div>
         <div className = "contentContainer">
            <div className = "reel">
-                <MobileItem first = {true} header = {<h1>WILL<br/>CHATT-<br/>ERSON</h1>} subHeader = {<h3>Designer & Developer</h3>} />
+                <MobileItem first = {true} header = {<h1>PORT-<br/>FOLIO</h1>} subHeader = {<><h3>WILL CHATTERSON</h3><h3>DESIGNER & DEVELOPER</h3></>} />
                 <MobileItem header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h3>} />
                 <MobileItem header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>BRANDING, DESIGN, DEVELOPMENT</h3>} />
                 <MobileItem header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
@@ -37,6 +38,7 @@ const Mobile = props =>{
             onClick = {()=>handleArrowClick("right")}
             src={arrow} alt=""/>            
         </div>
+        <Footer />
     </div>)
 }
 

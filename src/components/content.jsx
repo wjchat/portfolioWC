@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react'
+import Footer from "./footer.jsx"
 import gsap from 'gsap';
 
 import "../sass/content.scss"
@@ -77,8 +78,11 @@ const Content = props =>{
         <div className = "scrollContainer">
         <ContentBox>
             <div className = "titlePage">
-            <h1>WILL CHATT-<br/>ERSON</h1>
-            <h2>DESIGN & DEVELOPMENT</h2>
+            <div className = "container">
+                <h1>PORT-<br/>FOLIO</h1>
+                <h3>WILL CHATTERSON</h3>
+            </div>
+            <h2>DESIGNER & DEVELOPER</h2>
             </div>
         </ContentBox>
         <ContentBox>
@@ -124,7 +128,7 @@ const Content = props =>{
             style ={{visibility: "hidden"}}
             ref = {div=>message=div}>EMAIL COPIED TO CLIPBOARD</h2>
         </ContentBox>
-        
+        <Footer />
         </div>
     )
 }

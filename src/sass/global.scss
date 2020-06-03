@@ -8,6 +8,11 @@ $mobileBreak: "420px";
         @content;
     }
 }
+@mixin desktop {
+    @media(min-width: $mobileBreak){
+        @content;
+    }
+}
 
 //set fonts
 @mixin largeText{
@@ -15,7 +20,7 @@ $mobileBreak: "420px";
     letter-spacing: 1.036vw;
     color: $white;
     @include mobile{
-        font-size: 20vw;
+        font-size: 25vw;
         letter-spacing: 1.536vw;
     }
 }
@@ -60,8 +65,18 @@ body{
     }
 }
 .mobileView{
-    display: none;
-    @include mobile{
-        display: block;
+    @include desktop{
+        display: none;
     }
+}
+.footer{
+    color: $white;
+    @include smallText;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    width: fit-content;
+    height: fit-content;
+    text-align: right;
+    box-sizing: content-box;
 }

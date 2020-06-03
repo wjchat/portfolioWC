@@ -30,12 +30,31 @@
     }
     .titlePage{
         height: 100%;
-        &>h1{
-            @include largeText;
-            height: 100vh;
+        &>.container{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            height: 100vh;
+            padding-top: 20vh;
+            &>h1{
+                height: 60vh;
+                @include largeText;
+//                border: solid red 1px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            &>h3{
+                position: relative;
+                @include smallText;
+//                border: red 1px solid;
+                width: 47vw;
+                text-align: right;
+                height: 20vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
         &>h2{
             width: fit-content;
