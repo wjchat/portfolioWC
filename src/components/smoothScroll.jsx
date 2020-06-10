@@ -10,8 +10,6 @@ export default class SmoothScroll extends React.Component {
     height: null
   };
 
-
-
   componentDidMount() {
     this.setState({
         height: window.innerHeight
