@@ -1,82 +1,86 @@
 $black: #080808;
-$white: #F8F8FF ;
-$font: 'Questrial', sans-serif;
+$white: #f8f8ff;
+$font: "Questrial", sans-serif;
 $mobileBreak: "420px";
 
 @mixin mobile {
-    @media(max-width: $mobileBreak){
-        @content;
-    }
+  @media (max-width: $mobileBreak) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media(min-width: $mobileBreak){
-        @content;
-    }
+  @media (min-width: $mobileBreak) {
+    @content;
+  }
 }
 
 //set fonts
-@mixin largeText{
-    font-size: 14.8vw;
+@mixin largeText {
+  font-size: 14.8vw;
+  letter-spacing: 1.036vw;
+  color: $white;
+  @include mobile {
+    font-size: 25vw;
+    letter-spacing: 1.536vw;
+  }
+}
+@mixin mediumText {
+  font-size: 7.5vw;
+  color: $white;
+  letter-spacing: 0.525vw;
+  @include mobile {
+    font-size: 14vw;
     letter-spacing: 1.036vw;
-    color: $white;
-    @include mobile{
-        font-size: 25vw;
-        letter-spacing: 1.536vw;
-    }
+  }
 }
-@mixin mediumText{
-    font-size:7.5vw;
-    color: $white;
-    letter-spacing: .525vw;
-    @include mobile{
-        font-size: 14vw;
-        letter-spacing: 1.036vw;
-    }
-}
-@mixin smallText{
-    font-size: 1.8vw;
-    color: $white;
-    letter-spacing: .126vw;
-    @include mobile{
-        font-size: 4vw;
-        letter-spacing: .369vw;
-    }
+@mixin smallText {
+  font-size: 1.8vw;
+  color: $white;
+  letter-spacing: 0.126vw;
+  @include mobile {
+    font-size: 4vw;
+    letter-spacing: 0.369vw;
+  }
 }
 
-html{
-    background-color: $black;
-
+html {
+  background-color: $black;
 }
-body{
-    cursor: none;
-    background-color: $black !important;
-    color: $white;
-    font-family: $font;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+body {
+  cursor: none;
+  background-color: $black !important;
+  color: $white;
+  font-family: $font;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 //set mobile and desktop views
-.desktopView{
+.desktopView {
+    display: block;
+  @include mobile {
+    display: none;
+  }
+}
+.mobileView {
+  display: block;
+      @include desktop {
+    display: none;
+  }
+}
+.footer {
+  color: $white;
+  @include smallText;
+  position: absolute;
+  bottom: 1vw;
+  right: 1vw;
+  width: fit-content;
+  height: fit-content;
+  text-align: right;
+  box-sizing: content-box;
     @include mobile{
-        display: none;
+        bottom: -10vh;
     }
-}
-.mobileView{
-    @include desktop{
-        display: none;
-    }
-}
-.footer{
-    color: $white;
-    @include smallText;
-    position: absolute;
-    bottom: 1vw;
-    right: 1vw;
-    width: fit-content;
-    height: fit-content;
-    text-align: right;
-    box-sizing: content-box;
 }

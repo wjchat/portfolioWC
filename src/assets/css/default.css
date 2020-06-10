@@ -25,6 +25,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -100,4 +101,8 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
 }

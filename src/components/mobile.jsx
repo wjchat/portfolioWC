@@ -24,9 +24,11 @@ const Mobile = props =>{
         <div className = "contentContainer">
            <div className = "reel">
                 <MobileItem first = {true} header = {<h1>PORT-<br/>FOLIO</h1>} subHeader = {<><h3>WILL CHATTERSON</h3><h3>DESIGNER & DEVELOPER</h3></>} />
-                <MobileItem header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>BRANDING, DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
+                <MobileItem 
+                link = "https://bugbvintage.com"
+                header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>DESIGN, DEVELOPMENT</h3>} />
+                <MobileItem link = "bsr.com" header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
+                <MobileItem first = {true} comingSoon = {true} header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h3>} />
                 <MobileItem first = {true} header = {<h2>AVAILABLE FOR HIRE</h2>} subHeader = {<h3>wchatterson@gmail.com</h3>} />
             </div>
         </div>

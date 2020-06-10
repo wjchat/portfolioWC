@@ -87,24 +87,13 @@ const Content = props =>{
         </ContentBox>
         <ContentBox>
             <h1
-            onMouseMove = {()=>handleEnter("#D3C371")}
-            onMouseLeave = {()=>handleLeave()}
-            ><a href="" target = "_blank">
-            MATTE <br/>PROJECTS
-            </a>
-            </h1>
-            <h2
-            >CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h2>
-        </ContentBox>
-        <ContentBox>
-            <h1
             onMouseMove = {()=>handleEnter("#71A4D3")}
             onMouseLeave = {()=>handleLeave()}
-            ><a href="" target = "_blank">
+            ><a href="https://www.bugbvintage.com" target = "_blank">
             BUG B. <br/>VINTAGE
             </a>
             </h1>
-            <h2>BRANDING, DESIGN, DEVELOPMENT</h2>
+            <h2>DESIGN, DEVELOPMENT</h2>
         </ContentBox>
         <ContentBox>
             <h1
@@ -116,6 +105,15 @@ const Content = props =>{
                 </a> 
                 </h1>
             <h2>MOTION DESIGN, DEVELOPMENT</h2>
+        </ContentBox>
+        <ContentBox>
+            <h1
+            ><a>
+            MATTE <br/>PROJECTS
+            </a>
+            </h1>
+            <h2>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h2>
+            <h2><br/>COMING SOON</h2>
         </ContentBox>
         <ContentBox>   
             <h1>GET IN TOUCH</h1>
