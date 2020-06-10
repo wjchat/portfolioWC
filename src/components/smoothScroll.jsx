@@ -2,6 +2,7 @@ import React from "react";
 import { gsap, Power4 } from "gsap";
 import Content from './content.jsx';
 import SideNav from './sideNav.jsx'
+import ResizeObserver from 'resize-observer-polyfill';
 
 import "../sass/smoothScroll.scss";
 
