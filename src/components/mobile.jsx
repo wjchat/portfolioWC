@@ -27,7 +27,7 @@ const Mobile = props =>{
                 <MobileItem 
                 link = "https://bugbvintage.com"
                 header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem link = "bsr.com" header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
+                <MobileItem link = "https://benswansonralph.com" header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
                 <MobileItem first = {true} comingSoon = {true} header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h3>} />
                 <MobileItem first = {true} header = {<h2>AVAILABLE FOR HIRE</h2>} subHeader = {<h3>wchatterson@gmail.com</h3>} />
             </div>

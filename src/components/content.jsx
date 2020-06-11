@@ -100,7 +100,7 @@ const Content = props =>{
             onMouseMove = {()=>handleEnter("#1B1B1B")}
             onMouseLeave = {()=>handleLeave()}
             >
-            <a href="" target = "_blank">
+            <a href="https://benswansonralph.com" target = "_blank">
             BSR
                 </a> 
                 </h1>
