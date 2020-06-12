@@ -13,6 +13,14 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-167572949-2",
+        head: "true",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
       `gatsby-plugin-sass`,
