@@ -1,0 +1,47 @@
+@import "global";
+
+.introContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $black;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        @include mediumText;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    p{
+        @include smallText;
+        width: 100%;
+        text-align: center;
+        padding: 0 15%;
+        margin-bottom: 5vh;
+        @include mobile{
+            line-height: 120%;
+        }
+        &>span{
+            position: relative;
+            padding: 20px 0;
+            .border{
+                position: absolute;
+                height: .15vw;
+                width: 100%;
+                background-color: $white;
+                bottom: calc(.15vw + 18px);
+                right: inherit;
+                left: 0;
+                @include mobile{
+                    height: .6vw;
+                    bottom: calc(.6vw + 18px);
+                }
+            }
+        }
+    }
+}

@@ -23,7 +23,7 @@ const Hire = props => {
   }, [message, show])
   const handleClick = () => {
     const el = document.createElement("textarea")
-    el.value = "wchatterson@gmail.com"
+    el.value = "will@willchatterson.com"
     document.body.appendChild(el)
     el.select()
     document.execCommand("copy")
@@ -42,7 +42,7 @@ const Hire = props => {
         onClick={() => handleClick()}
       >
         <h1>AVAILABLE FOR HIRE</h1>
-        <h1>wchatterson@gmail.com</h1>
+        <h1>will@willchatterson.com</h1>
         <h1 style={{ display: "none" }} ref={div => (message = div)}>
           EMAIL COPIED TO CLIPBOARD
         </h1>

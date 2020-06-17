@@ -65,7 +65,7 @@ const Content = props =>{
     }
     const handleClick = () =>{
     const el = document.createElement("textarea")
-    el.value = "wchatterson@gmail.com"
+    el.value = "will@willchatterson.com"
     document.body.appendChild(el)
     el.select()
     document.execCommand("copy")
@@ -93,18 +93,19 @@ const Content = props =>{
             BUG B. <br/>VINTAGE
             </a>
             </h1>
-            <h2>DESIGN, DEVELOPMENT</h2>
+            <h2>VINTAGE CLOTHING STORE.</h2>
+            <h2>DESIGN, DEVELOPMENT.</h2>
         </ContentBox>
         <ContentBox>
             <h1
-            onMouseMove = {()=>handleEnter("#1B1B1B")}
-            onMouseLeave = {()=>handleLeave()}
             >
-            <a href="https://benswansonralph.com" target = "_blank">
+            <a>
             BSR
                 </a> 
                 </h1>
-            <h2>MOTION DESIGN, DEVELOPMENT</h2>
+            <h2>VIDEOGRAPHER'S PORTFOLIO.</h2>
+            <h2>MOTION DESIGN, DEVELOPMENT.</h2>
+            <h2><br/>COMING SOON.</h2>
         </ContentBox>
         <ContentBox>
             <h1
@@ -112,8 +113,9 @@ const Content = props =>{
             MATTE <br/>PROJECTS
             </a>
             </h1>
-            <h2>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h2>
-            <h2><br/>COMING SOON</h2>
+            <h2>ONLINE PUBLICATION.</h2>
+            <h2>CREATIVE DIRECTION, DESIGN, DEVELOPMENT.</h2>
+            <h2><br/>COMING SOON.</h2>
         </ContentBox>
         <ContentBox>   
             <h1>GET IN TOUCH</h1>
@@ -121,7 +123,7 @@ const Content = props =>{
             onMouseMove = {()=>handleEnter("")}
             onMouseLeave = {()=>handleLeave()}
             onClick = {()=>handleClick()}
-            >wchatterson@gmail.com</span></h2>
+            >will@willchatterson.com</span></h2>
             <h2 
             style ={{visibility: "hidden"}}
             ref = {div=>message=div}>EMAIL COPIED TO CLIPBOARD</h2>

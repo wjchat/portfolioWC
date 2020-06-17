@@ -6,6 +6,7 @@ import Mobile from "../components/mobile.jsx"
 
 import SEO from '../components/seo.js';
 import "../assets/css/default.css"
+import Intro from "../components/intro.jsx"
 
 import { 
     TweenMax,
@@ -34,6 +35,7 @@ const IndexPage = () => {
         <meta http-equiv="Expires" content="0" />
       </head>
         <SEO title = "Will Chatterson" />
+          
            <div className = "desktopView">
               <SmoothScroll 
               updateShrink = {(bool) => updateShrink(bool)}
@@ -46,6 +48,7 @@ const IndexPage = () => {
            <div className = "mobileView">
                <Mobile />
            </div>
+           <Intro updateShrink = {(bool) => updateShrink(bool)} />
     </div>)
 }
 

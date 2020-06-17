@@ -26,10 +26,10 @@ const Mobile = props =>{
                 <MobileItem first = {true} header = {<h1>PORT-<br/>FOLIO</h1>} subHeader = {<><h3>WILL CHATTERSON</h3><h3>DESIGNER & DEVELOPER</h3></>} />
                 <MobileItem 
                 link = "https://bugbvintage.com"
-                header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem link = "https://benswansonralph.com" header = {<h2>BSR</h2>} subHeader = {<h3>MOTION DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem first = {true} comingSoon = {true} header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>CREATIVE DIRECTION, DESIGN, DEVELOPMENT</h3>} />
-                <MobileItem first = {true} header = {<h2>AVAILABLE FOR HIRE</h2>} subHeader = {<h3>wchatterson@gmail.com</h3>} />
+                header = {<h2>BUG B. VINTAGE</h2>} subHeader = {<h3>VINTAGE CLOTHING STORE.<br/>DESIGN, DEVELOPMENT.</h3>} />
+                <MobileItem first = {true} comingSoon = {true} header = {<h2>BSR</h2>} subHeader = {<h3>VIDEOGRAPHER'S PORTFOLIO.<br/>MOTION DESIGN, DEVELOPMENT.</h3>} />
+                <MobileItem first = {true} comingSoon = {true} header = {<h2>MATTE PROJECTS</h2>} subHeader = {<h3>ONLINE PUBLICATION.<br/>CREATIVE DIRECTION, DESIGN, DEVELOPMENT.</h3>} />
+                <MobileItem first = {true} header = {<h2>AVAILABLE FOR HIRE</h2>} subHeader = {<h3>will@willchatterson.com</h3>} />
             </div>
         </div>
         <div className = "arrowContainer">
