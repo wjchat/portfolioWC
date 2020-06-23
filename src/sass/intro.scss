@@ -28,15 +28,29 @@
         }
         &>span{
             position: relative;
-            padding: 20px 0;
+//            padding: 20px 0;
+            height: 100%;
             .border{
                 position: absolute;
-                height: .15vw;
-                width: 100%;
+                height: .08vw;
+                width: calc(2px + 12.4vw);
                 background-color: $white;
-                bottom: calc(.15vw + 18px);
+                bottom: 0px;
                 right: inherit;
-                left: 0;
+                left: -2px;
+                opacity: 1;
+                overflow: hidden;
+                &>span{
+                    height: 1.82vw;
+                    position: absolute;
+                    color: $black;
+                    width: 12.77vw;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    transform: translateY(-.88vw);
+                }
                 @include mobile{
                     height: .6vw;
                     bottom: calc(.6vw + 18px);

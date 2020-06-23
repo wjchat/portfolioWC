@@ -5,27 +5,18 @@ import "../sass/intro.scss"
 const Intro = (props) =>{
     let border;
     let curtain;
+    let enterSite
     const [tween, updateTween] = useState(null)
     useEffect(()=>{
         //create gsap timeline when border ref is initialized
-        if(border){
+        if(border && enterSite){
             let tl = gsap.timeline({paused: true});
-            tl.set(border,{
-                right: "inherit",
-                left: 0,
-            })
             tl.to(border, .2,{
-                width: "0%",
-                ease: Power1.easeIn,
-            }) 
-            tl.set(border, {
-                right: 0,
-                left: "inherit",
+                height: "1.82vw",
             })
-            tl.to(border, .2, {
-                width: "100%",
-                ease: Power1.easeOut,
-            })
+            tl.to(enterSite, .2,{
+                y: "0vw",
+            }, `-=.2`)
             updateTween(tl)
         }
     }, [border])
@@ -53,10 +44,12 @@ const Intro = (props) =>{
         //if mouse is over, shrink cursor and move border
         if(d === "enter"){
             props.updateShrink(true)
+            props.updateMouseColor("#080808")
             tween.play();
         //otherwise, reset styles
         }else if (d === "leave"){
             props.updateShrink(false)
+            props.updateMouseColor("#F8F8FF")
             tween.reverse();
         }
     }
@@ -64,14 +57,16 @@ const Intro = (props) =>{
        ref = {div=>curtain=div}
        className = "introContainer">
         <h1>Hi, I'm Will.</h1>
-        <p>I design and build websites for small & medium sized organizations. The websites I make are for brands to whom creativity, indivuduality, and user-experience are paramount. </p>
-        <p><span
+        <p>I design and build websites for small & medium sized organizations. The websites I make are for brands who value creativity, indivuduality, and user-experience the most. </p>
+        <p>
+        <span
         onMouseOver = {()=>hover("enter")}
         onMouseLeave = {()=>hover("leave")}
         onClick = {()=>handleClick()}>
         <span
         ref = {div=>border=div}    
-        className = "border"></span>Enter the site</span> to see a selection of past projects. </p>
+        className = "border"><span ref = {div=>enterSite=div}>Enter the site</span></span>
+        Enter the site</span> to see a selection of past projects. </p>
     </div>)
 }
 
