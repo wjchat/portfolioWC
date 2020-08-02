@@ -57,7 +57,7 @@ const Intro = (props) =>{
        ref = {div=>curtain=div}
        className = "introContainer">
         <h1>Hi, I'm Will.</h1>
-        <p>I design and build websites for small & medium sized organizations. The websites I make are for brands who value creativity, indivuduality, and user-experience the most. </p>
+        <p>I design and build websites for small & medium sized organizations. The websites I make are for brands who value creativity, individuality, and user-experience the most. </p>
         <p>
         <span
         onMouseOver = {()=>hover("enter")}
